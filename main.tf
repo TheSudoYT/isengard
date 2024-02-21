@@ -1,11 +1,5 @@
 terraform {
-  backend "s3" {
-    bucket         = "isengard-terraform-state" # Use the appropriate bucket name for each project
-    key            = "path/to/my/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "isengard-terraform-state-lock"
-    encrypt        = true
-  }
+  
 }
 
 provider "aws" {

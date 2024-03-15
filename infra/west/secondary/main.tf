@@ -1,11 +1,11 @@
 terraform {
-  backend "s3" {
-    bucket         = "rivendell-terraform-state" # Use the appropriate bucket name for each project
-    key            = "west/secondary/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "rivendell-terraform-state-lock"
-    encrypt        = true
-  }
+  ##backend "s3" {
+##    bucket         = "rivendell-terraform-state" # Use the appropriate bucket name for each project
+##    key            = "west/secondary/terraform.tfstate"
+##    region         = "us-east-1"
+##    dynamodb_table = "rivendell-terraform-state-lock"
+##    encrypt        = true
+##  }
 }
 
 provider "aws" {
